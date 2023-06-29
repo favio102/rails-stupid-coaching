@@ -9,6 +9,8 @@ class QuestionsController < ApplicationController
                 'Great!'
               elsif @ask && @ask.ends_with?('?')
                 'Silly question, get dressed and go to work!'
+              elsif @ask == 'Hello'
+                "I don't care, get dressed and got to work!"
               else
                 "I don't care, get dressed and got to work!"
               end
